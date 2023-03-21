@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana;
-    background-color: #00161c;
+    /*background-color: #00161c;*/
 }
 .center
 {
@@ -13,4 +13,69 @@
     margin:0 auto;
     flex-wrap: wrap;
     border: 2px solid rgb(30, 255, 0);
+}
+section.menu
+{
+    min-height: 80px;
+    background-color: blueviolet;
+}
+.menu_geral
+{
+    border: 2px solid brown;
+    background-color: blueviolet;
+    width: 100%;
+    height: 80px;
+    padding-top: 2px;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+}
+.menu_logo
+{
+    min-width: 200px;
+    width: 30%;
+    padding-left: 100px;
+    border: 2px solid red;
+}
+.menu_itens
+{
+    border: 2px solid rgb(42, 99, 165);
+    width: 70%;
+    margin-top: 40px;
+    text-align: end;
+    border: 2px solid black;
+}
+.menu_itens a
+{
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+section.pagina_home
+{
+    min-height: 800px;
+}
+section.sobre_mim
+{
+    min-height: 800px;
+}
+.sobre_geral
+{
+    display: flexbox;
+}
+.sobre_pt1
+{
+    display: flex;
+}
+.sobre_pt2
+{
+    display: flex;
+    min-height: 200px;
+}
+.sobre_pt3
+{
+    width: 100%;
 }
