@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana;
-    /*background-color: #00161c;*/
+    /*background-color: #0c2340;*/
+    /*background-color: #b95118;*/
 }
 .center
 {
@@ -12,17 +13,18 @@
     padding:0 2%;
     margin:0 auto;
     flex-wrap: wrap;
-    border: 2px solid rgb(30, 255, 0);
+   /*border: 2px solid rgb(30, 255, 0);*/
 }
+/*-----------SECTION-----------*/
 section.menu
 {
     min-height: 80px;
-    background-color: blueviolet;
+    background-color: #0c2340;
 }
 .menu_geral
 {
-    border: 2px solid brown;
-    background-color: blueviolet;
+    /*border: 2px solid brown;*/
+    background-color: #0c2340;
     width: 100%;
     height: 80px;
     padding-top: 2px;
@@ -35,29 +37,118 @@ section.menu
 {
     min-width: 200px;
     width: 30%;
-    padding-left: 100px;
-    border: 2px solid red;
+    padding-left: 50px;
+    /*border: 2px solid red;*/
+}
+.menu_logo img
+{
+    max-width: 100px;
+    max-height: 100px;
 }
 .menu_itens
 {
-    border: 2px solid rgb(42, 99, 165);
+    /*border: 2px solid rgb(42, 99, 165);*/
     width: 70%;
     margin-top: 40px;
     text-align: end;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 .menu_itens a
 {
     text-decoration: none;
     color: white;
-    margin-right: 50px;
+    margin-right: 15px;
     font-weight: bold;
-    border: 2px solid black;
+   /*border: 2px solid #144ea5;*/
 }
-section.pagina_home
+.menu_itens a:hover
 {
-    min-height: 800px;
+    border-bottom: 4px solid #b95118;
+    border-radius: 1px;
 }
+/*section.pagina_home*/
+
+.pagina_home > .center
+{
+    max-width: none;
+    /*border: 2px solid yellow;*/
+    padding: 0;
+    min-height: 800px;
+
+}
+.img_home
+{
+    /*border: 2px solid rgb(0, 225, 255);*/
+    width: 100%;
+    background-image: url(assets/slider01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.text_home
+{
+    /*border: 2px solid black;*/
+    margin: auto;
+    margin-top: 200px;
+    margin-left: 150px;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 280px;
+    padding: 14px;
+    
+}
+.text_home h1
+{
+    font-size: 28px;
+    padding-bottom: 14px;
+}
+.text_home h2
+{
+    font-size: 20px;
+}
+.btn 
+{
+    color: #0c2340;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #0c2340;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 120px;
+    border-radius: 8px;
+}
+  
+  .btn:hover 
+{
+    color: white;
+    z-index: 1;
+}
+  
+  .btn::before
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: #b95118;
+    z-index: -1;
+    transition: all 1s;
+}
+  
+  .btn:hover::before 
+{
+    width: 160%;
+}
+/*-----------SECTION-----------*/
 section.sobre_mim
 {
     min-height: 800px;
@@ -65,17 +156,117 @@ section.sobre_mim
 .sobre_geral
 {
     display: flexbox;
+    /*border: 2px solid red;*/
 }
 .sobre_pt1
 {
     display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*order: 2px solid green;*/
+}
+.sobre_foto
+{
+    width: 30%;
+    margin: auto;
+    /*border: 2px solid pink;*/
+}
+.sobre_text
+{
+    width: 70%;
+    padding: 5px 20px;
+    /*border: 2px solid cyan;*/
+}
+.sobre_text h1
+{   
+    padding-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.sobre_text h2
+{   
+    padding-top: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.sobre_text h3
+{   
+    padding-top: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: justify;
+}
+.sobre_foto img
+{
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
 }
 .sobre_pt2
 {
     display: flex;
-    min-height: 200px;
-}
-.sobre_pt3
-{
     width: 100%;
+    /*border: 2px solid yellow;*/
+}
+.sobre_resumo
+{
+    width:70%;
+    padding: 5px 20px;
+    /*border: 2px solid green;*/
+}
+.sobre_resumo h1
+{
+    padding-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.sobre_resumo h2
+{
+    padding-top: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.sobre_resumo h3
+{
+    padding-top: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: justify;
+}
+.sobre_box
+{   
+    margin: auto 28px 0px;
+    width: 30%;
+   /*border: 2px solid cyan;*/
+}
+.sobreBox_single
+{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #000000;
+    border-radius: 1px;
+}
+.sbs1
+{   
+    display: flex;
+}
+.sbs2
+{
+    margin: auto 10px;
+}
+.sbs2 h1
+{
+    color: cornflowerblue;
+}
+.sbs2 h2
+{
+    color: #2db918;
+}
+.logo_box_sobre
+{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+
 }
