@@ -151,6 +151,7 @@ section.menu
 /*-----------SECTION-----------*/
 section.sobre_mim
 {
+    background-color: rgb(200, 200, 200);
     min-height: 800px;
 }
 .sobre_geral
@@ -163,6 +164,9 @@ section.sobre_mim
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 20px;
+    padding: 25px;
     /*order: 2px solid green;*/
 }
 .sobre_foto
@@ -206,7 +210,10 @@ section.sobre_mim
 {
     display: flex;
     width: 100%;
-    border: 2px solid yellow;
+    /*border: 2px solid yellow;*/
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 25px;
 }
 .sobre_resumo
 {
@@ -235,9 +242,8 @@ section.sobre_mim
 }
 .sobre_box
 {   
-    margin: auto 28px 0px;
+    margin: auto 28px auto;
     width: 30%;
-   /*border: 2px solid cyan;*/
 }
 .sobreBox_single
 {
@@ -258,10 +264,12 @@ section.sobre_mim
 .sbs2 h1
 {
     color: cornflowerblue;
+    font-size: 18px;
 }
 .sbs2 h2
 {
     color: #2db918;
+    font-size: 14px;
 }
 .logo_box_sobre
 {
@@ -316,19 +324,23 @@ section.sobre_mim
 {
     margin: auto;
     display: flex;
-    border: 2px solid cyan;
+    /*border: 2px solid cyan;*/
 }
 .contato_box > .btn1
 {
     margin-top: auto;
     margin: 25px auto;
 }
+section.servicos
+{
+    background-color: rgb(200, 200, 200);
+}
 .serv_titulo
 {
     margin: auto;
-    padding: 20px;
-    padding-top: 40px;
-    border: 2px solid red;
+    padding: 40px;
+    padding-top: 60px;
+    /*border: 2px solid red;*/
 }
 .serv_box
 {
@@ -338,21 +350,22 @@ section.sobre_mim
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-gap: 10px;
     justify-content: center;
-    border: 2px solid cyan;
+    /*border: 2px solid cyan;*/
 
 }
 .polaroid
 {
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     margin: auto;
     width: 100%;
     min-height: 500px;
     padding: 14px;
     border-radius: 20px;
+    background-color: rgb(220, 220, 220);
 }
 .inf_polaroid
 {
-    border: 2px solid pink;
+    /*border: 2px solid pink;*/
 }
 .fotos_servicos
 {
@@ -362,7 +375,7 @@ section.sobre_mim
     justify-content: center;
     text-align: center;
     justify-content: center;
-    border: 2px solid yellow;
+    /*border: 2px solid yellow;*/
 }
 .inf_polaroid h1
 {
@@ -377,20 +390,24 @@ section.sobre_mim
 section.conclusao
 {
     min-height: 500px;
-    background-color: aquamarine;
+    background-color: #0c2340;
+    color: white;
+    border-top: 10px solid #000000;
 }
 .conclu_text
 {
     width: 100%;
     height: 500px;
     display: flex;
-    border: 2px solid black;
+    margin-top: 18px;
+    
 }
 .top1
 {
     width: 40%;
-    border: 2px solid yellow;
+    margin: 10px;
     display: flex;
+    border-top: 3px solid #b95118;
     
 }
 .top1 img
@@ -398,15 +415,108 @@ section.conclusao
     width: 50%;
     margin: auto;
     margin-top: 30px;
-    border: 2px solid pink;
 }
 .top2
 {
     width: 30%;
-    border: 2px solid red;
+    margin: 10px;
+}
+.menu_rapido
+{   
+    height: 50%;
+    border-top: 3px solid #b95118;
+}
+.menu_rapido h1
+{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}
+.menu_rapido a
+{
+    padding: 6px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.redes_sociais
+{
+    height: 50%;
+    border-top: 3px solid #b95118;
+    cursor: pointer;
+}
+.redes_sociais h1
+{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}
+.logos_redes
+{
+    display: flex;
+    justify-content: center;
+}
+.redes_sociais img
+{
+    margin: 0px 5px;
+    width: 40px;
+    height: 40px;
 }
 .top3
 {
     width: 30%;
-    border: 2px solid green;
+    margin: 10px;
+    border-top: 3px solid #b95118;
+}
+.top3 h1
+{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}
+.top3 h3
+{
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 0px;
+}
+footer
+{
+    background: rgb(200, 200, 200);
+    margin: auto;
+}
+.rodape
+{
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+.rodape h3
+{
+    width: 25%;
+    font-size: 12px;
+    text-align: start;
+}
+.rodape > .rod1
+{
+    font-size: 12px;
+    margin: auto;
+    text-align: end
+}
+.rodape > .rod2
+{
+    font-size: 12px;
+    margin: auto;
+    text-align: start;
+    padding-left: 4px;
+}
+.rodape h4
+{
+    width: 50%;
+    font-size: 12px;
+    margin: auto;
+    text-align: end;
 }
