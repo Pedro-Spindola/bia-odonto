@@ -73,7 +73,7 @@ section.menu
     max-width: none;
     /*border: 2px solid yellow;*/
     padding: 0;
-    min-height: 800px;
+    min-height: 900px;
 
 }
 .img_home
@@ -88,7 +88,7 @@ section.menu
 {
     /*border: 2px solid black;*/
     margin: auto;
-    margin-top: 200px;
+    margin-top: 300px;
     margin-left: 150px;
     width: 100%;
     height: 100%;
@@ -206,7 +206,7 @@ section.sobre_mim
 {
     display: flex;
     width: 100%;
-    /*border: 2px solid yellow;*/
+    border: 2px solid yellow;
 }
 .sobre_resumo
 {
@@ -269,4 +269,144 @@ section.sobre_mim
     height: 70px;
     margin: auto;
 
+}
+.btn1
+{
+    color: #0c2340;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #0c2340;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 120px;
+    border-radius: 8px;
+}
+  
+  .btn1:hover 
+{
+    color: white;
+    z-index: 1;
+}
+  
+  .btn1::before
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: #b95118;
+    z-index: -1;
+    transition: all 1s;
+}
+  
+  .btn1:hover::before 
+{
+    width: 160%;
+}
+.contato_box
+{
+    margin: auto;
+    display: flex;
+    border: 2px solid cyan;
+}
+.contato_box > .btn1
+{
+    margin-top: auto;
+    margin: 25px auto;
+}
+.serv_titulo
+{
+    margin: auto;
+    padding: 20px;
+    padding-top: 40px;
+    border: 2px solid red;
+}
+.serv_box
+{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+    border: 2px solid cyan;
+
+}
+.polaroid
+{
+    border: 2px solid green;
+    margin: auto;
+    width: 100%;
+    min-height: 500px;
+    padding: 14px;
+    border-radius: 20px;
+}
+.inf_polaroid
+{
+    border: 2px solid pink;
+}
+.fotos_servicos
+{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid yellow;
+}
+.inf_polaroid h1
+{
+    font-size: 22px;
+}
+.inf_polaroid h2
+{
+    font-size: 18px;
+    font-weight: normal;
+}
+/*-----------SECTION-----------*/
+section.conclusao
+{
+    min-height: 500px;
+    background-color: aquamarine;
+}
+.conclu_text
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    border: 2px solid black;
+}
+.top1
+{
+    width: 40%;
+    border: 2px solid yellow;
+    display: flex;
+    
+}
+.top1 img
+{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    border: 2px solid pink;
+}
+.top2
+{
+    width: 30%;
+    border: 2px solid red;
+}
+.top3
+{
+    width: 30%;
+    border: 2px solid green;
 }
