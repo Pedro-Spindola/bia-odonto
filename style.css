@@ -211,7 +211,7 @@ section.sobre_mim
     display: flex;
     width: 100%;
     /*border: 2px solid yellow;*/
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(220, 220, 220);
     border-radius: 20px;
     padding: 25px;
 }
@@ -328,8 +328,8 @@ section.sobre_mim
 }
 .contato_box > .btn1
 {
-    margin-top: auto;
-    margin: 25px auto;
+    margin: auto;
+    margin-top: 60px;
 }
 section.servicos
 {
@@ -381,6 +381,11 @@ section.servicos
 {
     font-size: 18px;
     font-weight: normal;
+}
+section.servicos > .center > .contato_box > .btn1
+{
+    margin-top: none;
+    margin: 60px auto;
 }
 /*-----------SECTION-----------*/
 section.conclusao
