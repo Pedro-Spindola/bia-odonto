@@ -8,20 +8,25 @@
     <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <section class="menu">
+    <header class="menu">
         <div class="menu_geral">
             <div class="menu_logo">
                 <img src="assets/logo1.png">
             </div>
-            <div class="menu_itens">
-                <a title="Home" href="#home">Home</a>
-                <a title="Sobre" href="">Sobre Mim</a>
-                <a title="Servicos" href="">Serviços</a>
-                <a title="Blog" href="">Blog</a>
-                <a title="Atendimento" href="">Atendimento</a>
-            </div>
+            <nav class="menu_itens">
+                <ul>
+                    <li><a title="Home" href="#home">Home</a></li>
+                    <li><a title="Sobre" href="">Sobre Mim</a></li>
+                    <li><a title="Servicos" href="">Serviços</a></li>
+                    <li><a title="Blog" href="">Blog</a></li>
+                    <li><a title="Atendimento" href="">Atendimento</a></li>
+                </ul>
+            </nav><!--menu_itens-->
+            <div class="icon_menu">
+                <img src="assets/menu.svg" alt="" srcset="">
+            </div><!--icom_menu-->
         </div><!--menu_geral-->
-    </section> <!--menu-->
+    </header> <!--menu-->
     <section class="pagina_home">
         <div class="center">
             <div class="img_home">
@@ -139,14 +144,14 @@
                     <img class="" src="assets/logo1.png" alt="">
                 </div><!--top1-->
                 <div class="top2">
-                    <div class="menu_rapido">
+                    <nav class="menu_rapido">
                         <h1>Menu Rapido</h1>
                         <a title="Home" href="#home">Home</a>
                         <a title="Sobre" href="">Sobre Mim</a>
                         <a title="Servicos" href="">Serviços</a>
                         <a title="Blog" href="">Blog</a>
                         <a title="Atendimento" href="">Atendimento</a>
-                    </div>
+                    </nav>
                     <div class="redes_sociais">
                         <h1>Redes sociais</h1>
                         <div class="logos_redes">
@@ -176,5 +181,6 @@
             </div>
         </div><!--center-->
     </footer><!--end-->
+    <script src="js/main.js"></script>
 </body>
 </html>

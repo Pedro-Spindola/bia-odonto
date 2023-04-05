@@ -16,9 +16,9 @@
    /*border: 2px solid rgb(30, 255, 0);*/
 }
 /*-----------SECTION-----------*/
-section.menu
+header.menu
 {
-    min-height: 80px;
+    height: 80px;
     background-color: #0c2340;
 }
 .menu_geral
@@ -53,18 +53,42 @@ section.menu
     text-align: end;
     /*border: 2px solid black;*/
 }
+.menu_itens ul
+{
+    /*border: 2px solid rgb(42, 165, 73);*/
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    float: right;
+    list-style: none;
+}
 .menu_itens a
 {
     text-decoration: none;
     color: white;
     margin-right: 15px;
     font-weight: bold;
-   /*border: 2px solid #144ea5;*/
+    /*border: 2px solid #144ea5;*/
 }
 .menu_itens a:hover
 {
     border-bottom: 4px solid #b95118;
     border-radius: 1px;
+}
+.icon_menu
+{
+   width: 0%; 
+   height: 50px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   margin: auto;
+   position: relative;
+}
+.icon_menu img
+{
+    scale: 0.3;
+    color: #ffffff;
 }
 /*section.pagina_home*/
 
@@ -347,7 +371,7 @@ section.servicos
     margin: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
     justify-content: center;
     /*border: 2px solid cyan;*/
@@ -534,4 +558,162 @@ footer
     font-size: 12px;
     margin: auto;
     text-align: end;
+}
+/*****Respansivo*****/
+
+@media screen and (max-width: 999px)
+{
+    .serv_box
+    {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 40px;
+
+    }
+}
+@media screen and (max-width: 768px)
+{   
+    .menu_geral
+    {
+        /*border: 2px solid brown;*/
+        background-color: #0c2340;
+        width: 100%;
+        padding-top: 2px;
+        display: flex;
+        overflow: hidden;
+        position: static;
+        z-index: auto;
+    }
+    .menu_itens
+    {
+        /*border: 2px solid rgb(42, 99, 165);*/
+        width: auto;
+        margin-top: 40px;
+        text-align: end;
+        /*border: 2px solid black;*/
+    }
+    .menu_itens ul
+    {
+        /*border: 2px solid rgb(42, 165, 73);*/
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        width: 50%;
+        margin-top: 38px;
+        text-align: center;
+        list-style: none;
+        background-color: #0c2340;
+        display: none;
+    }
+    .menu_itens ul.active
+    {
+        display: flex;
+    }
+    li
+    {
+        margin: 50px;
+    }
+    .menu_itens a
+    {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        /*border: 2px solid #144ea5;*/
+    }
+    .icon_menu
+    {
+       width: 10%;
+       cursor: pointer;
+    }
+    .icon_menu img
+    {
+        filter: invert(1);
+        scale: 0.5;
+        display: flex;
+    }
+    .menu_logo
+    {
+        min-width: 200px;
+        width: 90%;
+        text-align: center;
+    }
+    .serv_box
+    {
+        padding: 100px;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        grid-gap: 40px;
+    }
+    .sobre_pt1
+    {
+        display: block;
+    }
+    .sobre_foto
+    {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    /*border: 2px solid pink;*/
+    }
+    .sobre_text
+    {
+    width: 100%;
+    padding: 5px 20px;
+    text-align: center;
+    /*border: 2px solid cyan;*/
+    }
+    .sobre_pt2
+    {
+        display: block;
+    }
+    .sobre_resumo
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .sobre_box
+    {
+        width: 100%;
+        padding: 0px 20%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .conclu_text
+    {
+        display: block;
+        margin-top: 18px;
+        align-items: center;
+        margin: auto;
+        height: 100%;
+    }
+    .top1
+    {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .top1 img
+    {
+        width: 30%;
+    }
+    .top2
+    {
+        width: 100%;
+        margin: 10px;
+    }
+    .top3
+    {
+        width: 100%;
+        margin: 10px;
+        border-top: 3px solid #b95118;
+    }
+    .maps_google
+    {
+        margin: 20px auto;
+        padding: 0px 80px;
+        border-top: 3px solid #b95118;
+        padding-top: 10px;
+        width: 100%;
+        height: 400px;
+        max-height: 500px;
+    }
 }
